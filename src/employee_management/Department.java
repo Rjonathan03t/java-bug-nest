@@ -3,7 +3,7 @@ package employee_management;
 /**
  * TODO : a department is a collection of employees. It has a name and a set of employees in it.
  */
-public class Department {
+public abstract class Department {
     private int id;
     private String name;
 
@@ -27,4 +27,6 @@ public class Department {
     public void setName(String name) {
         this.name = name;
     }
+
+    public abstract double calculatePay();
 }
